@@ -83,50 +83,110 @@
     </section>
 
     <!-- great tea section starts here -->
-<div class="parent_div max-w-[1250px] mx-auto mt-[100px] h-[1000px] md:h-[600px] flex items-center justify-between p-12 bg-gradient-to-r from-[#ff8938] to-[#ff0000] rounded-2xl relative overflow-hidden flex-col md:flex-row">
-    
-    <div class="left_div w-1/2 text-white flex flex-col justify-center bg-[url('./images/bg_cup.png')] bg-no-repeat bg-bottom  h-[600px]">
-        <div>
-            <h1 class="text-5xl font-bold">Meet Our Super <br> Clients</h1>
-            <p class="mt-8 mb-5 text-gray-100 max-w-md">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-            <button class="w-[139px] h-[56px] bg-white text-xl font-bold text-[#ff8938] rounded-lg shadow-md">Show All</button>
-        </div>  
-    </div>
-
-    
-    <div class="right_div md:w-1/2 relative h-full flex items-center justify-center">
-        <div class="customer-review w-[70vw] md:w-[400px]  bg-white p-8 rounded-lg shadow-xl absolute z-10">
-            <p class="text-[#777777] text-sm mb-4">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-            <h2 class="text-xl font-bold text-black">Ilham Yuda</h2>
-            <p class="text-[#777777] text-sm">Businessman</p>
-
-            <div class="absolute -top-[30px] -left-[30px] rounded-full p-1 bg-white">
-            <img src="./images/client.png" alt="">
-            </div>
+    <div class="parent_div max-w-[1250px] mx-auto mt-[100px] h-auto md:h-[600px] flex items-center justify-between p-8 md:p-12 bg-gradient-to-r from-[#ff8938] to-[#ff0000] rounded-2xl relative overflow-hidden flex-col md:flex-row">
+        
+        <!-- Left Div -->
+        <div class="left_div w-full md:w-1/2 text-white flex flex-col justify-center bg-[url('./images/bg_cup.png')] bg-no-repeat bg-bottom h-[600px] w-[336px] py-10 md:py-0">
             <div>
-              <img src="./images/circles.png" alt="" class="absolute right-4 bottom-4">
-            </div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">Meet Our Super <br> Clients</h1>
+                <p class="mt-6 mb-8 text-gray-100 max-w-md text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <button class="w-[139px] h-[56px] bg-white text-xl font-bold text-[#ff8938] rounded-lg shadow-md cursor-pointer hover:bg-gray-100 transition">Show All</button>
+            </div>  
         </div>
-        <div class="customer-review w-[70vw] md:w-[400px]  bg-white p-8 rounded-lg shadow-xl absolute left-[30%] top-[9%] opacity-30">
-            <p class="text-[#777777] text-sm mb-4">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-            <h2 class="text-xl font-bold text-black">Ilham Yuda</h2>
-            <p class="text-[#777777] text-sm">Businessman</p>
 
-            <div class="absolute -top-[30px] -left-[30px] rounded-full p-1 bg-white">
-            <img src="./images/client.png" alt="">
-            </div>
-        </div>
-        <div class="customer-review w-[70vw] md:w-[400px] bg-white p-8 rounded-lg shadow-xl absolute left-[30%] bottom-[5%] opacity-30">
-            <p class="text-[#777777] text-sm mb-4">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
-            <h2 class="text-xl font-bold text-black">Ilham Yuda</h2>
-            <p class="text-[#777777] text-sm">Businessman</p>
+        <!-- Right Div (Desktop Absolute Layout & Mobile Responsive) -->
+        <div class="right_div w-full md:w-1/2 relative h-[420px] md:h-full flex items-center justify-center mt-6 md:mt-0">
+            
+            <!-- Main Active Review Card (Centered on mobile, absolute layout on desktop) -->
+            <div class="customer-review w-[90%] md:w-[400px] bg-white p-6 md:p-8 rounded-lg shadow-xl absolute z-10 top-1/2 -translate-y-1/2 md:translate-y-0 md:top-auto md:left-0">
+                <p class="text-[#777777] text-sm mb-4">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h2 class="text-xl font-bold text-black">Ilham Yuda</h2>
+                <p class="text-[#777777] text-sm">Businessman</p>
 
-            <div class="absolute -top-[30px] -left-[30px] rounded-full p-1 bg-white">
-            <img src="./images/client.png" alt="">
+                <div class="absolute -top-[30px] -left-[30px] rounded-full p-1 bg-white shadow-sm">
+                    <img src="./images/client.png" alt="Client" class="w-12 h-12 rounded-full object-cover">
+                </div>
+                <div>
+                    <img src="./images/circles.png" alt="" class="absolute right-4 bottom-4">
+                </div>
             </div>
+
+            <!-- Top Faded Background Review Card (Visible on Desktop) -->
+            <div class="customer-review w-[400px] bg-white p-8 rounded-lg shadow-xl absolute left-[10%] top-[5%] opacity-30 hidden md:block">
+                <p class="text-[#777777] text-sm mb-4">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                <h2 class="text-xl font-bold text-black">Ilham Yuda</h2>
+                <p class="text-[#777777] text-sm">Businessman</p>
+                <div class="absolute -top-[30px] -left-[30px] rounded-full p-1 bg-white">
+                    <img src="./images/client.png" alt="">
+                </div>
+            </div>
+
+            <!-- Bottom Faded Background Review Card (Visible on Desktop) -->
+            <div class="customer-review w-[400px] bg-white p-8 rounded-lg shadow-xl absolute left-[10%] bottom-[5%] opacity-30 hidden md:block">
+                <p class="text-[#777777] text-sm mb-4">We are providing the best and suitable home insurance services for the people who are interested to-treatment</p>
+                <h2 class="text-xl font-bold text-black">Ilham Yuda</h2>
+                <p class="text-[#777777] text-sm">Businessman</p>
+                <div class="absolute -top-[30px] -left-[30px] rounded-full p-1 bg-white">
+                    <img src="./images/client.png" alt="">
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
+    <!-- great tea section ends here -->
+
+<!-- news & events section starts here -->
+    <section class="max-w-[1250px] mx-auto mt-[100px]">
+      <h1 class="text-5xl text-center font-bold">News & Events</h1>
+      <p class="text-center my-10 text-[#777777]">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable.
+      </p>
+
+      <!-- Grid Container for 3 News Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="border border-[#dedede] p-5 rounded-xl shadow-sm flex flex-col justify-between">
+          <div>
+            <img src="./images/news-1.png" class="w-full rounded-lg mb-5" alt="News 1">
+            <p class="text-[#777777] mb-3">Feb 05, 2027</p>
+            <h3 class="text-xl font-bold mb-3">Collecting 8 points for <br> process-driven delivery</h3>
+            <p class="text-[#777777] text-sm mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+          </div>
+          <div>
+            <a href="#" class="font-bold text-black hover:text-[#ff8938] transition-colors">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="border border-[#dedede] p-5 rounded-xl shadow-sm flex flex-col justify-between">
+          <div>
+            <img src="./images/news-2.png" class="w-full rounded-lg mb-5" alt="News 2">
+            <p class="text-[#777777] mb-3">Feb 05, 2027</p>
+            <h3 class="text-xl font-bold mb-3">Collecting 8 points for <br> process-driven delivery</h3>
+            <p class="text-[#777777] text-sm mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+          </div>
+          <div>
+            <a href="#" class="font-bold text-black hover:text-[#ff8938] transition-colors">Read More</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="border border-[#dedede] p-5 rounded-xl shadow-sm flex flex-col justify-between">
+          <div>
+            <img src="./images/news-3.png" class="w-full rounded-lg mb-5" alt="News 3">
+            <p class="text-[#777777] mb-3">Feb 05, 2027</p>
+            <h3 class="text-xl font-bold mb-3">Collecting 8 points for <br> process-driven delivery</h3>
+            <p class="text-[#777777] text-sm mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+          </div>
+          <div>
+            <a href="#" class="font-bold text-black hover:text-[#ff8938] transition-colors">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- news & events section ends here -->
 
     <!--  footer section starts here -->
      <div class="bg-[#ffe7e6] py-[50px] mt-[100px]">
